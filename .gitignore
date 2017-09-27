@@ -1,0 +1,6 @@
+.env/*
+*.pyc
+__pycache__
+*.wp[r|u]
+*.egg-info/*
+.python-version
