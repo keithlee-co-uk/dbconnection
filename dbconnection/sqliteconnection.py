@@ -53,3 +53,9 @@ class SQLiteConnection(Connection):
 
         print("New connection")
         self.connection = sqlite3.connect(self.database)
+
+    # -------------------------------------------------------------------------
+    def __str__(self):
+
+        return '{}(database={})'.format(self.__class__.__name__,
+                                        self.database)

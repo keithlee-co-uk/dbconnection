@@ -63,3 +63,10 @@ class Connection(object):
         fields = [field[0] for field in cursor.description]
         Row = namedtuple("Row", fields)
         return Row(*row)
+
+    # -------------------------------------------------------------------------
+    def __str__(self):
+
+        return '{}(host={}, database={})'.format(self.__class__.__name__,
+                                                 self.host,
+                                                 self.database)

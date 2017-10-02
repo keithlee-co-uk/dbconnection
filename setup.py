@@ -11,7 +11,7 @@ setup(name='dbconnection',
       description='Python Database Wrapper Utility',
       author='Keith Lee',
       author_email='code@keithlee.co.uk',
-      url='https://github.com/keithlee-co-uk/',
+      url='https://github.com/keithlee-co-uk/dbconnection',
       packages=['dbconnection'],
 
       install_requires=requirements,

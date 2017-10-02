@@ -1,6 +1,9 @@
 # -*- coding: UTF-8 -*-
 
-from mysql.connector import connect, cursor, errors
+try:
+    from mysql.connector import connect, cursor, errors
+except ModuleNotFoundError:
+    print("mysql.connector is not installed.")
 from dbconnection.connection import Connection
 
 
