@@ -9,10 +9,8 @@ These instructions will get you a copy of the project up and running on your loc
 ### Prerequisites
 
 
+```Requires freetds-dev to be installed for pymsql sudo apt-get install freetds-dev```
 
-```
-None
-```
 
 ### Installing
 
@@ -21,7 +19,7 @@ A step by step series of examples that tell you have to get a development env ru
 Say what the step will be
 
 ```
-Give the example
+pip install git+https://github.com/keithlee-co-uk/dbconnection.git
 ```
 
 And repeat
@@ -56,9 +54,9 @@ Give an example
 
 Add additional notes about how to deploy this on a live system
 
-## Requires freetds-dev to be installed for pymsql
+```
 
-```sudo apt-get install freetds-dev```
+```
 
 
 ## Authors
