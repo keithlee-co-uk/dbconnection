@@ -1,6 +1,6 @@
 # -*- coding: UTF-8 -*-
 
-from dbconnection.sqlserverconnection import SQLServerConnection
+# from dbconnection.sqlserverconnection import SQLServerConnection pymssql keeps breaking a circleci attempts, removed for now
 from dbconnection.mysqlconnection import MySQLConnection
 from dbconnection.sqliteconnection import SQLiteConnection
 
