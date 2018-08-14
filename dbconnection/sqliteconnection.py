@@ -1,7 +1,7 @@
 # -*- coding: UTF-8 -*-
 
 import sqlite3
-from collections import namedtuple
+#  from collections import namedtuple
 from dbconnection.connection import Connection
 
 
@@ -40,7 +40,7 @@ class SQLiteConnection(Connection):
 
     # -------------------------------------------------------------------------
     def change(self, sql, params=None):
-        cursor = self._cursor()
+        #  cursor = self._cursor()
         self._action(sql, params)
         self.connection.commit()
 

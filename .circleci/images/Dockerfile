@@ -13,7 +13,8 @@ MAINTAINER  Keith Lee <code@keithlee.co.uk>
 RUN apt-get update && apt-get install -y \
     freetds-bin \
     freetds-common \
-    freetds-dev
+    freetds-dev \
+    mariadb-server
 
 RUN pip install Cython
 # RUN pip install ipython
@@ -23,5 +24,6 @@ RUN pip install Cython
 
 RUN apt-get install -y python-pymssql
 RUN pip install pymssql
+RUN pip install pytest-mysql
 
 CMD ["python"]
