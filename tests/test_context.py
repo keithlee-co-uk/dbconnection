@@ -36,12 +36,3 @@ def test_sqlite_connection():
 
     selection = db.select(SQL)
     assert selection[0] == (1, 20, 'fred', 'freddy, fox', 56.34532, 0.28636)
-#    for i in selection:
-#        print("Hello")
-#        print(type(i))
-#        if isinstance(i, typing.NamedTuple):
-#            print("Is namedtuple")
-#        print(i)
-        #break
-#    print(i)
-#    print("Goodbye")
