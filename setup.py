@@ -3,18 +3,14 @@
 
 from setuptools import setup
 
-with open('requirements/prod.txt') as f:
-    requirements = f.read().splitlines()
-
 setup(name='dbconnection',
-      version='0.0.1',
+      version='0.0.2',
       description='Python Database Wrapper Utility',
       author='Keith Lee',
       author_email='code@keithlee.co.uk',
       url='https://github.com/keithlee-co-uk/dbconnection',
-      packages=['dbconnection'],
 
-      install_requires=requirements,
+      install_requires=['mysql-connector'],
       extras_require={
           'test': ["pytest"],
       }
