@@ -1,9 +1,10 @@
 # -*- coding: UTF-8 -*-
-
+import sys
 try:
     import pymssql
 except ModuleNotFoundError:
     print("pymssql is not installed.")
+    sys.exit(status=1)
 from dbconnection.connection import Connection
 from collections import namedtuple
 
