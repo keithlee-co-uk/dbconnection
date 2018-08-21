@@ -30,7 +30,8 @@ jobs:
       - run:
           name: install dependencies
           command: |
-            sudo apt-get install python-pymssql
+            sudo apt-get update
+            sudo apt-get install freetds-dev
             python3 -m venv venv
             . venv/bin/activate
             pip install -r requirements/dev.txt
