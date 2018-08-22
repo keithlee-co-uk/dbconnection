@@ -15,7 +15,8 @@ class ConnectionFactory(object):
     """
     Base class describing the expected interface for a database connection
     """
-    engineType = {'sqlserver': SQLServerConnection,
+    engineType = {'mssql': SQLServerConnection,
+                  'sqlserver': SQLServerConnection,
                   'mysql': MySQLConnection,
                   'sqlite': SQLiteConnection}
 
